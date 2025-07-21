@@ -1,4 +1,4 @@
-type WashingMachine = {
+export type WashingMachine = {
     model: string;
     name: string;
     technology: string;
@@ -19,17 +19,13 @@ export const washingMachines: WashingMachine[] = [
         technology: "QuickDrive™",
         capacityKg: 9,
         dimensions: "55 x 60 x 85 cm",
-        features: [
-            "AddWash",
-            "AI Control",
-            "Silnik Digital Inverter",
-            "EcoDrum Clean",
+        features: [ "AddWash", "AI Control", "Silnik Digital Inverter", "EcoDrum Clean",
         ],
         energyClass: "A",
         pricePLN: 3199,
         installmentPLN: 53.31,
-        priceValidFrom: "2022-09-15",
-        priceValidTo: "2022-09-21",
+        priceValidFrom: "2022.09.15",
+        priceValidTo: "2022.09.21",
     },
     {
         model: "WW10T654DLH",
@@ -41,8 +37,8 @@ export const washingMachines: WashingMachine[] = [
         energyClass: "B",
         pricePLN: 3399,
         installmentPLN: 56.65,
-        priceValidFrom: "2022-09-15",
-        priceValidTo: "2022-09-21",
+        priceValidFrom: "2022.09.15",
+        priceValidTo: "2022.09.21",
     },
     {
         model: "WW80TA046AX",
@@ -54,8 +50,8 @@ export const washingMachines: WashingMachine[] = [
         energyClass: "C",
         pricePLN: 2199,
         installmentPLN: 36.65,
-        priceValidFrom: "2022-09-15",
-        priceValidTo: "2022-09-21",
+        priceValidFrom: "2022.09.15",
+        priceValidTo: "2022.09.21",
     },
     {
         model: "WW11BB744DGB",
@@ -67,8 +63,8 @@ export const washingMachines: WashingMachine[] = [
         energyClass: "A",
         pricePLN: 4299,
         installmentPLN: 71.65,
-        priceValidFrom: "2022-09-15",
-        priceValidTo: "2022-09-21",
+        priceValidFrom: "2022.09.15",
+        priceValidTo: "2022.09.21",
     },
     {
         model: "WW90T634DLH",
@@ -80,8 +76,8 @@ export const washingMachines: WashingMachine[] = [
         energyClass: "B",
         pricePLN: 2899,
         installmentPLN: 48.31,
-        priceValidFrom: "2022-09-15",
-        priceValidTo: "2022-09-21",
+        priceValidFrom: "2022.09.15",
+        priceValidTo: "2022.09.21",
     },
     {
         model: "WW80T554DAE",
@@ -93,8 +89,8 @@ export const washingMachines: WashingMachine[] = [
         energyClass: "C",
         pricePLN: 2599,
         installmentPLN: 43.31,
-        priceValidFrom: "2022-09-15",
-        priceValidTo: "2022-09-21",
+        priceValidFrom: "2022.09.15",
+        priceValidTo: "2022.09.21",
     },
     {
         model: "WW12T504DAW",
@@ -106,8 +102,8 @@ export const washingMachines: WashingMachine[] = [
         energyClass: "A",
         pricePLN: 4499,
         installmentPLN: 74.98,
-        priceValidFrom: "2022-09-15",
-        priceValidTo: "2022-09-21",
+        priceValidFrom: "2022.09.15",
+        priceValidTo: "2022.09.21",
     },
     {
         model: "WW10T684DLH",
@@ -119,8 +115,8 @@ export const washingMachines: WashingMachine[] = [
         energyClass: "B",
         pricePLN: 3599,
         installmentPLN: 59.98,
-        priceValidFrom: "2022-09-15",
-        priceValidTo: "2022-09-21",
+        priceValidFrom: "2022.09.15",
+        priceValidTo: "2022.09.21",
     },
     {
         model: "WW90T954ASH",
@@ -132,8 +128,8 @@ export const washingMachines: WashingMachine[] = [
         energyClass: "A",
         pricePLN: 3999,
         installmentPLN: 66.65,
-        priceValidFrom: "2022-09-15",
-        priceValidTo: "2022-09-21",
+        priceValidFrom: "2022.09.15",
+        priceValidTo: "2022.09.21",
     },
     {
         model: "WW80TA046AE",
@@ -145,8 +141,8 @@ export const washingMachines: WashingMachine[] = [
         energyClass: "D",
         pricePLN: 1999,
         installmentPLN: 33.31,
-        priceValidFrom: "2022-09-15",
-        priceValidTo: "2022-09-21",
+        priceValidFrom: "2022.09.15",
+        priceValidTo: "2022.09.21",
     },
     {
         model: "WW90TA046TT",
@@ -158,8 +154,8 @@ export const washingMachines: WashingMachine[] = [
         energyClass: "C",
         pricePLN: 2299,
         installmentPLN: 38.31,
-        priceValidFrom: "2022-09-15",
-        priceValidTo: "2022-09-21",
+        priceValidFrom: "2022.09.15",
+        priceValidTo: "2022.09.21",
     },
     {
         model: "WW11BGA046AE",
@@ -171,7 +167,55 @@ export const washingMachines: WashingMachine[] = [
         energyClass: "B",
         pricePLN: 3699,
         installmentPLN: 61.65,
-        priceValidFrom: "2022-09-15",
-        priceValidTo: "2022-09-21",
+        priceValidFrom: "2022.09.15",
+        priceValidTo: "2022.09.21",
+    },
+];
+
+type FiltersData = {
+    title: string;
+    options: { label: string }[];
+}[];
+
+export const filtersData: FiltersData = [
+    {
+        options: [
+            { label: "Popularność" },
+            { label: "Wszystkie" },
+            { label: "Cena" },
+            { label: "Pojemność" },
+        ],
+        title: "Sortuj po",
+    },
+    {
+        options: [
+            { label: "Pokaż wszystkie" },
+            { label: "Wszystkie" },
+            { label: "Drzwi AddWash" },
+            { label: "Panel AI Control" },
+            { label: "Silnik inwerterowy" },
+            { label: "Wyświetlacz elektroniczny" },
+        ],
+        title: "Funkcje",
+    },
+    {
+        options: [
+            { label: "Pokaż wszystkie" },
+            { label: "Wszystkie" },
+            { label: "A" },
+            { label: "B" },
+            { label: "D" },
+        ],
+        title: "Klasa energetyczna",
+    },
+    {
+        options: [
+            { label: "Pokaż wszystkie" },
+            { label: "Wszystkie" },
+            { label: "8kg" },
+            { label: "9kg" },
+            { label: "10.5kg" },
+        ],
+        title: "Pojemność",
     },
 ];

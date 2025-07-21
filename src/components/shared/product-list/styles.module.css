@@ -1,0 +1,29 @@
+.product__amount {
+    font-size: 14px;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.product__list {
+    display: flex;
+    row-gap: 20px;
+    column-gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+    justify-content: space-around;
+}
+
+.empty__list {
+    font-size: 40px;
+    font-weight: 700;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.button__more {
+    font-weight: 700;
+    text-align: center;
+    color: #007aff;
+    cursor: pointer;
+}

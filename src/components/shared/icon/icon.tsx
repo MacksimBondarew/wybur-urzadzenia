@@ -5,10 +5,8 @@ interface IIconProps {
     iconId: string;
 }
 
-const Icon = ({ styles, width, height, iconId }: IIconProps) => (
+export const Icon = ({ styles, width, height, iconId }: IIconProps) => (
     <svg style={styles} width={width} height={height}>
         <use href={`#${iconId}`} />
     </svg>
 );
-
-export { Icon };

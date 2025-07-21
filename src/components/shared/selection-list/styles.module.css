@@ -1,0 +1,9 @@
+.selection__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 12px;
+    row-gap: 24px;
+    width: 100%;
+    margin-bottom: 8px;
+}

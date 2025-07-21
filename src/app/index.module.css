@@ -1,30 +1,48 @@
-@import-normalize;
+@import url("https://fonts.cdnfonts.com/css/samsungone");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 body {
     font-family: sans-serif;
     line-height: 1.5;
     margin: 0;
     padding: 0;
+    font-family: "SamsungOne", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+li {
+    list-style-type: none;
+}
+ul {
+    margin: 0px;
+    padding-left: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+}
 p {
-    margin: 0;
+    margin: 0px;
 }
-
-ul,
-ol {
-    margin: 0;
-    padding: 0;
-}
-
 img {
     display: block;
     max-width: 100%;
-    height: auto;
+    z-index: 0;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
 }

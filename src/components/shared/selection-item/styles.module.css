@@ -1,0 +1,13 @@
+.selection__item {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    position: relative;
+}
+
+.selection__title {
+    font-weight: 700;
+    margin-bottom: 7px;
+    font-size: 18px;
+    color: #000000;
+}
